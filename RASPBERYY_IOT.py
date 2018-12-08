@@ -17,11 +17,11 @@ ADAFRUIT_IO_KEY = 'e2cac4fce1de4ebb802250a704153fa0'
 # (go to https://accounts.adafruit.com to find your username)
 ADAFRUIT_IO_USERNAME = 'trongle'
 # Set to the ID of the feed to subscribe to for updates.
-Relay_1 = 'relay1'
-Relay_2 = 'relay2'
-Relay_3 = 'relay3'
-Relay_4 = 'relay4'
-Relay_5 = 'relay5'
+Relay_1 = 'relay1'///pump out
+Relay_2 = 'relay2'///fan
+Relay_3 = 'relay3'///heating lamp
+Relay_4 = 'relay4'///pump in
+Relay_5 = 'relay5'///led light
 Threhold = 'threhold'
 Settime = 'settime'
 
