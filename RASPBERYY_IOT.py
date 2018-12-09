@@ -28,7 +28,7 @@ Settime = 'settime'
 print("IoT Farm Project - Graduation Project")
 print("Adafruit MQTT connected - >>...Start...<< ")
 def connected(client):
-    						# Subscribe to changes on a feed named Counter.
+    						# Subscribe (dk)to changes on a feed named Counter.
     print('Subscribing to Feed {0}'.format(Relay_1))
     client.subscribe(Relay_1)
 
@@ -64,8 +64,8 @@ def message(client, feed_id, payload):
   							  #Threhold detect value
     if(feed_id == 'threhold'):
         print('Temperature Threhold value: ', payload)
-        print('Set Temperature threshold to Device\n')
-        ser.write(('threhold'+ payload + '\r').encode())      
+        print('Set Temperature threshold to Device\n')#gia tri moi
+        ser.write(('threhold'+ payload + '\r').encode())# gởi ras
         sleep(1)
  							#settime detect value
     if(feed_id == 'settime'):
