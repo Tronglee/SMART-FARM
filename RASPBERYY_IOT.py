@@ -65,7 +65,7 @@ def message(client, feed_id, payload):
     if(feed_id == 'threhold'):
         print('Temperature Threhold value: ', payload)
         print('Set Temperature threshold to Device\n')#gia tri moi
-        ser.write(('threhold'+ payload + '\r').encode())# gởi ras
+        ser.write(('threhold'+ payload + '\r').encode())# gởi ras, câp nhat
         sleep(1)
  							#settime detect value
     if(feed_id == 'settime'):
@@ -230,7 +230,7 @@ client.connect()
 client.loop_background()			##lap
 
 
-try:
+try:					#lap ctr
     while (True):
 ##        ser.write(('SS\r').encode())
         time.sleep(1)
